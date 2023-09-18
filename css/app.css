@@ -1,0 +1,215 @@
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #0F172A;
+    padding-top: 4.8rem;
+    color: #94A3B8; font-family: 'Inter', 'Pretendard', sans-serif;
+}
+
+h1,h2,h3{
+    color: #E2E8F0;
+    text-transform: uppercase;
+}
+
+h2{
+    position: sticky; top: 0;
+    margin-bottom: 3.6rem;
+    font-size: 1.4rem; line-height: 1.42; letter-spacing: 0.14rem;
+    backdrop-filter: blur(8px);
+    padding: 2.4rem;
+}
+
+p{
+    color: #94A3B8;
+}
+
+p strong{
+    color: #E2E8F0; font-weight: 500;
+}
+
+.profile{
+    margin-bottom: 11.6rem;
+    padding: 0 2.4rem;
+}
+
+.profile__name{
+    margin-bottom: 1.2rem;
+    font-size: 3.6rem; font-weight: 700; line-height: 1.11; letter-spacing: -0.09rem;
+}
+
+.profile__job{
+    margin-bottom: 1.6rem;
+    font-size: 1.8rem; line-height: 1.55; letter-spacing: -0.045rem; font-weight: 500;
+}
+
+.profile__txt{
+    display: flex; flex-direction: column; row-gap: 1.2rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.5; font-size: 1.6rem;
+}
+
+.profile__social{
+    display: flex; column-gap: 2rem;
+}
+
+.about{
+    margin-bottom: 8.4rem;
+}
+
+.about__txt{
+    display: flex; flex-direction: column; row-gap: 1.2rem;
+    padding: 0 2.4rem;
+    line-height: 1.62; font-size: 1.6rem;
+}
+
+.about__txt:not(:last-child){
+    margin-bottom: 1.6rem;
+}
+
+.hash{
+    display: flex; flex-wrap: wrap; gap: 0.6rem;
+    font-size: 0;
+}
+
+.hash li{
+    list-style: none;
+    padding: 0.4rem 1.2rem;
+    background-color: rgba(45, 212, 191, 0.10);
+    font-size: 1.2rem; line-height: 1.66; color: #5EEAD4; font-weight: 500;
+    border-radius: 999.9rem;
+    text-align: center; text-transform: uppercase;
+}
+
+.exp{
+    margin-bottom: 6.4rem;
+}
+
+.exp__period{
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #64748B; font-weight: 600; line-height: 1.33; font-size: 1.2rem; letter-spacing: 0.03rem;
+}
+
+.exp__list{
+    padding: 0 2.4rem;
+}
+
+.exp__list li{
+    display: block;
+}
+
+.exp__name{
+    margin-bottom: 1.1rem;
+    line-height: 1.25; font-weight: 500; font-size: 1.6rem;
+}
+
+.exp__txt{
+    display: flex; flex-direction: column; row-gap: 1rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.4rem; line-height: 1.5;
+}
+
+.projects{
+    margin-bottom: 6.4rem;
+}
+
+.projects__list{
+    padding: 0 2.4rem;
+    list-style: none;
+}
+
+.projects__name{
+    margin-bottom: 1.1rem;
+    font-weight: 500; line-height: 1.25; font-size: 1.6rem;
+}
+
+.projects__name a{
+    display: flex; align-items: flex-end; column-gap: 0.6rem;
+    color: inherit;
+}
+
+.projects__git{
+    display: block;
+    margin-bottom: 1.1rem;
+}
+
+.projects__git img{
+    width: 2rem;
+}
+
+.projects__txt{
+    display: flex; flex-direction: column; row-gap: 1.2rem;
+    margin-bottom: 4.7rem;
+    font-size: 1.4rem; line-height: 1.5;
+}
+
+.projects .hash{
+    margin-bottom: 1.6rem;
+}
+
+.projects__thumb{
+    width: 20rem;
+    border-radius: 0.4rem;
+}
+
+.writing{
+    margin-bottom: 6.4rem;
+}
+
+.writing__list{
+    display: flex; flex-direction: column; row-gap: 5.66rem;
+    padding: 0 2.4rem;
+    list-style: none;
+}
+
+.writing__list a{
+    display: flex;
+}
+
+.writing__thumb{
+    align-self: flex-start;
+    margin-right: 1.65rem;
+    border-radius: 0.4rem;
+    width: 7.4rem; height: 5rem;
+    object-fit: cover;
+}
+
+.writing__years{
+    color: #94A3B8;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+.writing__name{
+    color: #E2E8F0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.writing__desc img{
+    vertical-align: bottom;
+}
+
+footer{
+    padding: 0 2.4rem 5rem;
+
+}
+
+footer p{
+    color: #64748B;
+    font-size: 1.4rem;
+    line-height: 1.42;
+}
+
+footer strong{
+    font-weight: 500;
+    color: #94A3B8;
+}
+
+footer strong a{
+    color: inherit;
+}
