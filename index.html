@@ -15,18 +15,25 @@
 </head>
 <body>
     <div class="gradient"></div>
-    <header class="profile">
-        <h1 class="profile__name">김철준</h1>
-        <h3 class="profile__job">웹 퍼블리셔 · UI Developer</h3>
-        <div class="profile__txt">
-            <p><strong>퀄리티, 성실함, 디테일, 열정</strong>으로 무장한 신입 웹 퍼블리셔 김철준입니다. :) 본 페이지에서는 저에대한 간단한 소개, 프로젝트, 경험, 공부를 하다 깨달은 것을 쓴 블로그 포스팅을 소개합니다.</p>
-        </div>
-        <div class="profile__social">
-            <a href="https://github.com/hmmiii" target="_blank"><img src="images/git.svg" alt="GITHUB LINK"></a>
+    <header>
+        <div class="profile">
+            <h1 class="profile__name">김철준</h1>
+            <h3 class="profile__job">웹 퍼블리셔 · UI Developer</h3>
+            <div class="profile__txt">
+                <p><strong>퀄리티, 성실함, 디테일, 열정</strong>으로 무장한 신입 웹 퍼블리셔 김철준입니다. :) 본 페이지에서는 저에대한 간단한 소개, 프로젝트, 경험, 공부를 하다 깨달은 것을 쓴 블로그 포스팅을 소개합니다.</p>
+            </div>
+            <nav>
+                <a href="#about" class="on">about</a>
+                <a href="#exp">experience</a>
+                <a href="#projects">projects</a>
+            </nav>
+            <div class="profile__social">
+                <a href="https://github.com/hmmiii" target="_blank"><img src="images/git.svg" alt="GITHUB LINK"></a>
+            </div>
         </div>
     </header>
     <main>
-        <section class="about">
+        <section id="about" class="about">
             <h2>about</h2>
             <div class="about__txt">
                 <p><strong>저는 개발 직무가 하고 싶었습니다.</strong> 어릴적부터 뭔가를 만들고, 누군가 써주는 게 좋았어서 그랬던 것 같기도 합니다. 별 거 아니었지만 학창시절에는 동아리실 게시판에 보기 좋은 폰트로 예쁘게 프린트해서 꽂은 공지를 보고 다른 친구가 보기 편하다라고 말해주는 것도 좋았습니다.</p>
@@ -34,16 +41,16 @@
                 <p>동시에 다음 목표도 찾을 수 있었습니다. 퍼블리셔는 그저 상상한 것을 구현하고 사용자의 사용성을 고민한다면, 프론트엔드 개발자는 이와 동시에 백엔드 개발자와 소통하며 데이터를 다루고, 유저가 좀 더 사용하기 편리하도록 웹사이트를 최적화 시키는 직업이라고 들어 저의 최종 목표로 삼을 수 있게 되었습니다. <strong>따라서 저의 현재 목표는 퍼블리셔가 되는 것, 좀 더 나아간 목표는 프론트엔드 개발자가 되는 것</strong>입니다.</p>
             </div>
         </section>
-        <section class="exp">
+        <section id="exp" class="exp">
             <h2>experience</h2>
             <ul class="exp__list">
                 <li>
                     <small class="exp__period">03 — 10 2023</small>
                     <div class="exp__content">
                         <h3 class="exp__name">웹 퍼블리셔 · 이너뷰</h3>
+                        <div class="exp__rank">사원</div>
                         <div class="exp__txt">
                             <p>Cafe24 쇼핑몰 솔루션을 기반으로 쇼핑몰들의 신규 구축, 운영 유지보수를 주로 하는 서울 소재 웹 에이전시입니다.</p>
-                            <p>Cafe24 쇼핑몰 솔루션에 대한 이해도 자체는 업계에서 가장 뛰어난 편이지만, 반대로 Cafe24 솔루션 이외에 다른 작업 기회가 없어 퇴사하게 되었습니다.</p>
                         </div>
                         <ul class="hash">
                             <li>html5</li>
@@ -57,12 +64,17 @@
                 </li>
             </ul>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2>projects</h2>
             <ul class="projects__list">
                 <li>
                     <div class="projects__content">
-                        <h3 class="projects__name"><a href="https://hmmiii.github.io/bbc/" target="_blank" class="projects__tit-link">BBC<img src="images/ico_arrow.svg" alt="링크 아이콘"></a></h3>
+                        <h3 class="projects__name"><a href="https://hmmiii.github.io/bbc/" target="_blank" class="projects__tit-link">
+                            BBC
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.036 12.464C5.1485 12.5764 5.301 12.6395 5.46 12.6395C5.619 12.6395 5.7715 12.5764 5.884 12.464L11.66 6.68801V11.24C11.66 11.3991 11.7232 11.5518 11.8357 11.6643C11.9483 11.7768 12.1009 11.84 12.26 11.84C12.4191 11.84 12.5717 11.7768 12.6843 11.6643C12.7968 11.5518 12.86 11.3991 12.86 11.24V5.24001C12.86 5.08088 12.7968 4.92827 12.6843 4.81575C12.5717 4.70323 12.4191 4.64001 12.26 4.64001H6.26C6.10087 4.64001 5.94826 4.70323 5.83573 4.81575C5.72321 4.92827 5.66 5.08088 5.66 5.24001C5.66 5.39914 5.72321 5.55176 5.83573 5.66428C5.94826 5.7768 6.10087 5.84001 6.26 5.84001H10.812L5.036 11.616C4.92364 11.7285 4.86053 11.881 4.86053 12.04C4.86053 12.199 4.92364 12.3515 5.036 12.464Z" fill="#E2E8F0"/>
+                            </svg>
+                    </h3>
                         <a href="https://github.com/hmmiii/bbc" target="_blank" class="projects__git"><img src="images/git.svg" alt="GITHUB REPO LINK"></a>
                         <div class="projects__txt">
                             <p>제가 배운 디자인, <strong>퍼블리싱 스킬을 최대한으로 보여줄 수 있도록 혼자서 작업한 프로젝트이자 가장 처음으로 작업한 프로젝트</strong>입니다. 실제로 상용되는 서비스처럼 보이기 위해서 실제로 백엔드, DB가 작업되진 않았으나 수 백개의 기사 페이지를 직접 수집해 HTML페이지로 퍼블리싱해서 넣었습니다.</p>
@@ -82,7 +94,7 @@
                 </li>
             </ul>
         </section>
-        <section class="writing">
+        <section id="writing" class="writing">
             <h2>writing</h2>
             <ul class="writing__list">
                 <li>
@@ -90,7 +102,12 @@
                         <img src="images/thumbs/writing/bem.jpeg" alt="BEM 명명법을 잘못 이해한 사례의 썸네일 이미지" class="writing__thumb">
                         <div class="writing__desc">
                             <small class="writing__years">2023</small>
-                            <h3 class="writing__name">BEM 명명법을 잘못 이해한 사례<img src="images/ico_arrow.svg" alt="링크 아이콘"></h3>
+                            <h3 class="writing__name">
+                                BEM 명명법을 잘못 이해한 사례
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.036 12.464C5.1485 12.5764 5.301 12.6395 5.46 12.6395C5.619 12.6395 5.7715 12.5764 5.884 12.464L11.66 6.68801V11.24C11.66 11.3991 11.7232 11.5518 11.8357 11.6643C11.9483 11.7768 12.1009 11.84 12.26 11.84C12.4191 11.84 12.5717 11.7768 12.6843 11.6643C12.7968 11.5518 12.86 11.3991 12.86 11.24V5.24001C12.86 5.08088 12.7968 4.92827 12.6843 4.81575C12.5717 4.70323 12.4191 4.64001 12.26 4.64001H6.26C6.10087 4.64001 5.94826 4.70323 5.83573 4.81575C5.72321 4.92827 5.66 5.08088 5.66 5.24001C5.66 5.39914 5.72321 5.55176 5.83573 5.66428C5.94826 5.7768 6.10087 5.84001 6.26 5.84001H10.812L5.036 11.616C4.92364 11.7285 4.86053 11.881 4.86053 12.04C4.86053 12.199 4.92364 12.3515 5.036 12.464Z" fill="#E2E8F0"/>
+                                </svg>
+                            </h3>
                         </div>
                     </a>
                 </li>
@@ -99,7 +116,12 @@
                         <img src="images/thumbs/writing/carousel.jpg" alt="플러그인 없이 바닐라 자바스크립트로 초간단 이미지 슬라이드 만들기의 썸네일 이미지" class="writing__thumb">
                         <div class="writing__desc">
                             <small class="writing__years">2023</small>
-                            <h3 class="writing__name">바닐라 자바스크립트로 초간단 이미지 슬라이드 만들기<img src="images/ico_arrow.svg" alt="링크 아이콘"></h3>
+                            <h3 class="writing__name">
+                                바닐라 자바스크립트로 초간단 이미지 슬라이드 만들기
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.036 12.464C5.1485 12.5764 5.301 12.6395 5.46 12.6395C5.619 12.6395 5.7715 12.5764 5.884 12.464L11.66 6.68801V11.24C11.66 11.3991 11.7232 11.5518 11.8357 11.6643C11.9483 11.7768 12.1009 11.84 12.26 11.84C12.4191 11.84 12.5717 11.7768 12.6843 11.6643C12.7968 11.5518 12.86 11.3991 12.86 11.24V5.24001C12.86 5.08088 12.7968 4.92827 12.6843 4.81575C12.5717 4.70323 12.4191 4.64001 12.26 4.64001H6.26C6.10087 4.64001 5.94826 4.70323 5.83573 4.81575C5.72321 4.92827 5.66 5.08088 5.66 5.24001C5.66 5.39914 5.72321 5.55176 5.83573 5.66428C5.94826 5.7768 6.10087 5.84001 6.26 5.84001H10.812L5.036 11.616C4.92364 11.7285 4.86053 11.881 4.86053 12.04C4.86053 12.199 4.92364 12.3515 5.036 12.464Z" fill="#E2E8F0"/>
+                                </svg>
+                            </h3>
                         </div>
                     </a>
                 </li>

@@ -5,11 +5,12 @@
 .gradient{
     position: fixed; inset: 0;
     background: radial-gradient(circle at left top, rgba(29, 78, 216, 0.15), transparent 80%);
+    pointer-events: none;
 }
 
 body{
     background-color: #0f172a;
-    padding-top: 4.8rem;
+    padding: 4.8rem 0 5rem;
     color: #94A3B8; font-family: 'Inter', 'Pretendard', sans-serif;
 }
 
@@ -25,10 +26,6 @@ h2{
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     padding: 2.4rem;
-}
-
-p{
-    color: #94A3B8;
 }
 
 p strong{
@@ -65,6 +62,10 @@ p strong{
 
 .profile__social{
     display: flex; column-gap: 2rem;
+}
+
+nav{
+    display: none;
 }
 
 .about{
@@ -113,8 +114,13 @@ p strong{
 }
 
 .exp__name{
-    margin-bottom: 1.1rem;
-    line-height: 1.25; font-weight: 500; font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 500; font-size: 1.6rem;
+}
+
+.exp__rank{
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem; font-weight: 500;
 }
 
 .exp__txt{
@@ -177,6 +183,7 @@ p strong{
 
 .writing__list a{
     display: flex;
+    color: inherit;
 }
 
 .writing__thumb{
@@ -188,13 +195,13 @@ p strong{
 }
 
 .writing__years{
-    color: #94A3B8;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.71;
 }
 
 .writing__name{
+    display: flex; align-items: flex-end; column-gap: 0.6rem;
     color: #E2E8F0;
     font-size: 1.6rem;
     font-weight: 500;
@@ -218,7 +225,6 @@ footer p{
 
 footer strong{
     font-weight: 500;
-    color: #94A3B8;
 }
 
 footer strong a{
@@ -259,6 +265,10 @@ footer strong a{
         display: flex; flex-direction: row-reverse;
     }
 
+    .projects__img-link{
+        align-self: flex-start;
+    }
+
     .projects__thumb{
         width: 25rem; margin-right: 1.6rem;
     }
@@ -272,6 +282,127 @@ footer strong a{
     }
 
     footer{
-        padding: 0 4.8rem 5rem;
+        padding: 0 4.8rem;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    body{
+        display: flex; padding: 0 9.6rem 9.6rem; flex-wrap: wrap;
+    }
+
+    h2{
+        display: none;
+    }
+
+    header,main{
+        flex: 1;
+        padding-top: 9.6rem;
+    }
+
+    header{
+        position: sticky; top: 0;
+        align-self: flex-start;
+    }
+
+    .profile__txt{
+        margin-bottom: 6.4rem;
+    }
+
+    nav{
+        display: flex; flex-direction: column;
+    }
+
+    nav a{
+        display: flex; column-gap: 1.6rem; align-items: center;
+        padding: 1.2rem 0.68rem 1.2rem 0;
+        line-height: 1.33; letter-spacing: 0.12rem; font-weight: 700; font-size: 1.2rem; text-transform: uppercase; color: #64748B;
+        transition-duration: .5s;
+    }
+
+    nav a::before{
+        content: '';
+        background-color: #475569;
+        width: 3.2rem; height: 0.1px;
+        transition: inherit;
+    }
+
+    nav a.on{
+        color: #E2E8F0;
+    }
+
+    nav a.on::before{
+        width: 6.4rem;
+        background-color: #E2E8F0;
+    }
+
+    .about, .exp, .projects{
+        margin-bottom: 14.3rem;
+    }
+
+    .projects__thumb{
+        width: 12rem;
+        border: 2px solid rgba(226, 232, 240, 0.10);
+    }
+
+    .exp__list:hover > li,
+    .projects__list:hover > li,
+    .writing__list:hover > li{
+        opacity: 0.5;
+    }
+
+    .exp__list > li,
+    .projects__list > li,
+    .writing__list > li{
+        padding: 2rem;
+        border-radius: 0.6rem;
+        transition-duration: 0.3s;
+    }
+
+    .projects__list li:hover .projects__thumb,
+    .writing__list li:hover .writing__thumb{
+        border: 2px solid rgba(226, 232, 240, 0.3);
+    }
+
+    .exp__list > li:hover,
+    .projects__list > li:hover,
+    .writing__list > li:hover{
+        background-color: rgba(30,41,59,.5);
+        box-shadow: 0 0 #0000,
+        0 0 #0000,
+        inset 0 1px 0 0 rgba(148,163,184,.1);
+        opacity: 1;
+    }
+    .projects__name, .projects__name svg,
+    .writing__name, .writing__name svg{
+        transition-duration: 0.2s;
+    }
+
+    .projects__list > li:hover .projects__name,
+    .writing__list > li:hover .writing__name{
+        color: #5eead4;
+    }
+
+    .projects__list > li:hover .projects__name svg,
+    .writing__list > li:hover .writing__name svg{
+        transform: translate(3px, -3px);
+    }
+
+    .projects__list > li:hover .projects__name svg path,
+    .writing__list > li:hover .writing__name svg path{
+        fill: #5eead4;
+    }
+
+    .writing__thumb{
+        width: 12rem; height: 7.605rem;
+        border: 2px solid rgba(226, 232, 240, 0.10);
+    }
+
+    .writing__list li:hover .writing__thumb{
+        border: 2px solid rgba(226, 232, 240, 0.3);
+    }
+    
+    footer{
+        width: 100%;
     }
 }
