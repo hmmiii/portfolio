@@ -2,7 +2,8 @@
     font-size: 62.5%;
 }
 
-.gradient{
+body::before{
+    content: '';
     position: fixed; inset: 0;
     background: radial-gradient(circle at left top, rgba(29, 78, 216, 0.15), transparent 80%);
     pointer-events: none;
