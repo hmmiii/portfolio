@@ -145,8 +145,11 @@ nav{
 }
 
 .projects__name a{
-    display: flex; align-items: flex-end; column-gap: 0.6rem;
     color: inherit;
+}
+
+.projects__name a svg{
+    vertical-align: bottom;
 }
 
 .projects__git{
@@ -202,14 +205,13 @@ nav{
 }
 
 .writing__name{
-    display: flex; align-items: flex-end; column-gap: 0.6rem;
     color: #E2E8F0;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.25;
 }
 
-.writing__desc img{
+.writing__desc svg{
     vertical-align: bottom;
 }
 
