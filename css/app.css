@@ -320,7 +320,7 @@ footer strong a{
         display: flex; column-gap: 1.6rem; align-items: center;
         padding: 1.2rem 0.68rem 1.2rem 0;
         line-height: 1.33; letter-spacing: 0.12rem; font-weight: 700; font-size: 1.2rem; text-transform: uppercase; color: #64748B;
-        transition-duration: .5s;
+        transition-duration: .3s;
     }
 
     nav a::before{
