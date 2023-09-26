@@ -295,6 +295,10 @@ footer strong a{
 }
 
 @media screen and (min-width:1300px) {
+    body::before{
+        display: none;
+    }
+
     .cursor-circle{
         display: block;
         position: fixed;
