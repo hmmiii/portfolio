@@ -303,7 +303,7 @@ footer strong a{
     }
 
     body{
-        display: flex; padding: 0 9.6rem 9.6rem; flex-wrap: wrap;
+        display: flex; max-width: 1280px; margin: 0 auto; flex-wrap: wrap;
     }
 
     h2{
