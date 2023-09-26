@@ -342,7 +342,7 @@ footer strong a{
     nav a::before{
         content: '';
         background-color: #475569;
-        width: 3.2rem; height: 0.1px;
+        width: 3.2rem; height: 0.1rem;
         transition: inherit;
     }
 
