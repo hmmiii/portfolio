@@ -17,7 +17,13 @@ const updateNavOnScroll = () => {
     navItems.forEach((navItem, idx) => {
         navItem.classList.toggle('on', idx === activeIdx);
     });
-}
+};
+
+const updateCursorCircle = (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+    document.querySelector('.cursor-circle').style.background = `radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+};
 
 window.addEventListener('scroll', updateNavOnScroll);
-
+window.addEventListener('mousemove', updateCursorCircle);

@@ -15,6 +15,10 @@ body{
     color: #94A3B8; font-family: 'Inter', 'Pretendard', sans-serif;
 }
 
+.cursor-circle{
+    display: none;
+}
+
 h1,h2,h3{
     color: #E2E8F0;
     text-transform: uppercase;
@@ -290,6 +294,13 @@ footer strong a{
 }
 
 @media screen and (min-width:1300px) {
+    .cursor-circle{
+        display: block;
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+    }
+
     body{
         display: flex; padding: 0 9.6rem 9.6rem; flex-wrap: wrap;
     }
